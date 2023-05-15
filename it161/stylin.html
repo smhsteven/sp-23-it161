@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="robots" content="noindex,nofollow">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Stylin' with CSS by Steven Do</title>
+        <!-- START Styles Here-->
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua&display=swap');
+
+            html{
+   background-color:#ccc;
+}
+
+
+body {
+   font-family:Arial,sans-serif;
+   background-color:#fff;
+   max-width:960px;
+   width:90%;
+   margin:auto;
+   padding:1%;
+}
+
+
+h1.page-header{
+    font-family:'Inknut Antiqua',serif;
+   width:80%;
+   margin:auto;
+   text-align:center;
+   text-shadow: 4px 4px 4px #aaa;
+}
+
+
+
+footer {
+   clear:both;
+   text-align:center;
+}
+
+            
+            
+            img {
+                float:left;
+                margin:1em;
+                max-width:800px;
+            }
+
+/* start nav rules */
+nav{
+   text-align:center; /* centers the nav */
+}
+
+
+nav a{
+   color:#000; /* font color is black */
+}
+
+
+nav ul {
+   list-style:none; /* removes the bullets */
+}
+nav li
+{
+   display:inline-block; /* makes <li> horizontal, but able to declare margins */
+   margin:0 2%; /* margin left-right, gets smaller as necessary */
+}
+nav a:hover{
+   text-decoration: none; /* default underline goes away on hover */
+}
+/* end nav rules */
+
+
+            footer {
+                clear:both;
+            }
+            
+            table, th, td {
+
+                
+ border: 1px solid;
+ border-collapse:collapse;
+}
+
+
+
+
+        </style>
+        <!-- END Styles Here-->
+    </head>
+    <body>
+        <header>
+            <h1 class="page-header">Stylin' with CSS by Steven Do</h1>
+            <nav>
+                <ul>
+                    <li><a href="elements.html" target="_blank">HTML Elements</a></li>
+                    <li><a href="https://www.w3.org/" target="_blank">The W3C</a></li>
+                    <li><a href="https://www.w3schools.com/" target="_blank">W3Schools</a></li>
+                    <li><a href="https://linkedin.com/learning/login" target="_blank">LinkedIn Learning Library</a></li>
+                </ul>
+             </nav>
+        </header>
+            <div>This page demonstrates how to create a look and feel on our pages using CSS.</div>
+            
+            <div>
+                <ul>
+                    <li>Spider-man: Into the Spider-Verse</li>
+                    <li>The Batman 2022</li>
+                    <li>Toy Story 1</li>
+                </ul>
+            </div>
+            <div>
+                <ol>
+                    <li>Grapes</li>
+                    <li>Strawberries</li>
+                    <li>Apples</li>
+                </ol>
+            </div>
+            <div><img src="https://picsum.photos/200/300" alt="This links to Lorem's Pictures"></div>
+            <div>Pictures provided by <a href="https://lorempicsum.photos" target="_blank">Lorem Picsum</a></div>
+            <div>This is how the <strong>strong</strong> tag works.</div>
+            <div>This is how the <em>em</em> tag works.</div>
+            <div>This is how the <strike>strike</strike> tag works.</div>
+            <div>This is text inside a div. <span style="background-color: yellow;">This is text inside a span</span></div>
+            <table>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email</th>
+                </tr>
+                <tr>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>john@example.com</td>
+                </tr>
+                <tr>
+                    <td>Jane</td>
+                    <td>Doe</td>
+                    <td>jane@example.com</td>
+                </tr>
+                <tr>
+                    <td>Jean</td>
+                    <td>Doe</td>
+                    <td>jean@example.com</td>
+                </tr>
+             </table>             
+        <footer>
+            <div><small>&copy; 2023 by 
+                Steven Do, All Rights Reserved ~ 
+                <a id="html-checker" href="#">Check HTML</a> ~ 
+                <a id="css-checker" href="#">Check CSS</a></small>
+           </div>
+           
+          </footer>
+        
+        <script>
+          //https://tinyurl.com/dynamic-html-checker
+          document.getElementById("html-checker").setAttribute("href","https://validator.w3.org/nu/?doc=" + location.href);
+            
+          document.getElementById("css-checker").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);  
+       </script>
+        
+    </body>
+</html>
