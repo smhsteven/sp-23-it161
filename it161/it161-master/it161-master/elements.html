@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="robots" content="noindex,nofollow">
+        <title>HTML Elements by Steven Do</title>
+        <!-- START Styles Here-->
+        <style>
+            img {
+                float:left;
+                margin:1em;
+                max-width:800px;
+            }
+
+            a {
+                color:black;
+            }
+
+            a:hover {
+                color:red;
+                background-color:yellow;
+                text-decoration: none;
+            }
+
+            footer {
+                clear:both;
+            }
+            
+            table, th, td {
+ border: 1px solid;
+ border-collapse:collapse;
+}
+
+        </style>
+        <!-- END Styles Here-->
+    </head>
+    <body>
+        <header>
+            <h1>HTML Elements by Steven Do</h1>
+            <nav>
+                <a href="https://www.w3.org/" target="_blank">The W3C</a> |
+                <a href="https://whatwg.org" target="_blank">WHATWG Community</a> |
+                <a href="https://w3schools.com" target="_blank">W3Schools</a> |
+                <a href="https://linkedin.com/learning/login" target="_blank">LinkedIn Learning Library</a> 
+            </nav>
+        </header>
+            <p>This page demonstrates some of the default behaviors of HTML elements.</p>
+            
+            <p>
+                <ul>
+                    <li>Spider-man: Into the Spider-Verse</li>
+                    <li>The Batman 2022</li>
+                    <li>Toy Story 1</li>
+                </ul>
+            </p>
+            <p>
+                <ol>
+                    <li>Grapes</li>
+                    <li>Strawberries</li>
+                    <li>Apples</li>
+                </ol>
+            </p>
+            <p><img src="https://picsum.photos/200/300" alt="This links to Lorem's Pictures"></p>
+            <p>Pictures provided by <a href="https://lorempicsum.photos" target="_blank">Lorem Picsum</a></p>
+            <p>This is how the <strong>strong</strong> tag works.</p>
+            <p>This is how the <em>em</em> tag works.</p>
+            <p>This is how the <strike>strike</strike> tag works.</p>
+            <div>This is text inside a div. <span style="background-color: yellow;">This is text inside a span</span></div>
+            <table>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email</th>
+                </tr>
+                <tr>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>john@example.com</td>
+                </tr>
+                <tr>
+                    <td>Jane</td>
+                    <td>Doe</td>
+                    <td>jane@example.com</td>
+                </tr>
+                <tr>
+                    <td>Jean</td>
+                    <td>Doe</td>
+                    <td>jean@example.com</td>
+                </tr>
+             </table>             
+        <footer>
+            <p><small>&copy; 2023 by 
+                Steven Do, All Rights Reserved ~ 
+                <a id="html-checker" href="#">Check HTML</a> ~ 
+                <a id="css-checker" href="#">Check CSS</a></small>
+           </p>
+           
+          </footer>
+        
+        <script>
+          //https://tinyurl.com/dynamic-html-checker
+          document.getElementById("html-checker").setAttribute("href","https://validator.w3.org/nu/?doc=" + location.href);
+            
+          document.getElementById("css-checker").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);  
+       </script>
+        
+    </body>
+</html>
